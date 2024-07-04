@@ -1,0 +1,100 @@
+/* Enhanced Styles for Company Management Page */
+
+/* Reset some default styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 1s ease; /* Slide-in animation */
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Page heading */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3rem; /* Larger heading size */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 4px; /* Increased letter spacing */
+    animation: fadeIn 1s ease; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* List group styles */
+.list-group {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    animation: fadeInUp 0.5s ease; /* Fade-in and slide-up animation */
+}
+
+.list-group-item:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.list-group-item a {
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* Bold text */
+}
+
+.list-group-item a:hover {
+    color: #007bff; /* Hover text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .list-group-item a {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Smaller heading size for smaller screens */
+        letter-spacing: 2px; /* Reduced letter spacing */
+    }
+}
